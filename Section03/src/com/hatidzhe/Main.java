@@ -131,7 +131,33 @@ public class Main {
         System.out.println("The sum of the numbers is " + sum);
         return sum;
     }
-    
+
+    public static int func7(int i, int end_value) {
+        int times_table;
+        int addition = 0;
+
+        Scanner user_input = new Scanner(System.in);
+        System.out.println("Which times table do you want?");
+        times_table = user_input.nextInt();
+
+        for (i = 1; i < end_value; i++) {
+            addition = i * times_table;
+            System.out.println(i + " times " + times_table + " = " + addition);
+        }
+        return addition;
+    }
+
+    public static int func8(int i, int end_value){
+        int reminder;
+        System.out.print("The odd numbers between " + i +" and " + end_value + " are:");
+        for (i=1; i<end_value;i++){
+            reminder = i % 2;
+            if (reminder!=0){
+                System.out.print(i+ " ");
+            }
+        }
+        return i;
+    }
 
     public static void main(String[] args) {
         func1();
@@ -140,5 +166,7 @@ public class Main {
         func4();
         func5(0, 11);
         func6(1, 100);
+        func7(1, 11);
+        func8(1,100);
     }
 }
