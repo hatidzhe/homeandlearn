@@ -1,5 +1,7 @@
 package com.hatidzhe;
+
 import java.util.Arrays;
+
 public class Main {
 
     public static void func1() {
@@ -14,11 +16,11 @@ public class Main {
         System.out.println(aryNums[2]);
     }
 
-    public static void func2(){
+    public static void func2() {
         int[] lottery_numbers = new int[49];
         int i;
-        for (i=0; i<lottery_numbers.length;i++){
-            lottery_numbers[i] = i+1;
+        for (i = 0; i < lottery_numbers.length; i++) {
+            lottery_numbers[i] = i + 1;
             System.out.println(lottery_numbers[i]);
         }
     }
@@ -35,8 +37,8 @@ public class Main {
 
         Arrays.sort(aryNums);
         int i;
-        for (i=0; i<aryNums.length;i++){
-            System.out.println("num: "+aryNums[i]);
+        for (i = 0; i < aryNums.length; i++) {
+            System.out.println("num: " + aryNums[i]);
         }
     }
 
