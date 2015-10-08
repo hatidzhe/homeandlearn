@@ -18,6 +18,17 @@ public class StudentResults {
 
     }
 
+    StudentResults(String gender) {
+        Full_Name = gender;
+        Exam_Name = "";
+        Exam_Score = "";
+        Exam_Grade = "";
+    }
+
+    String fullName() {
+        return Full_Name;
+    }
+
     String fullName(String aName) {
         Full_Name = aName;
         return Full_Name;
@@ -71,6 +82,11 @@ public class StudentResults {
         }
         return "Grade is " + examGrade;
 
+    }
+
+    String examScore(int aScore, String maximumScore) {
+        Exam_Score = aScore + maximumScore;
+        return Exam_Score;
     }
 
 }
