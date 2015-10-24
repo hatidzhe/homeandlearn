@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        String file_name = "home/hatidzhe/Desktop/test.txt";
+        String file_name = "/home/hatidzhe/Desktop/test1.txt";
 
         try {
             ReadFile file = new ReadFile(file_name);
